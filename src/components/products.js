@@ -21,7 +21,7 @@ function Products () {
         }, [])
 
     return (
-        <div className="Value-box">
+        <div className="margin2 Value-box">
             <div className="Product">
                 {products?.map((product) => (
                     <ProductCard key={product._id} name={product?.fulhausProductName} img={product?.imageURLs[0]} price={product?.retailPrice} currency={product.orderCurrency} />

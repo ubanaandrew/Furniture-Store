@@ -1,20 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
 .App {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat';
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 .Header {
   margin: 50px 100px;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -60,6 +53,10 @@
   margin: 20px;
 }
 
+.margin2 {
+  margin: 30px;
+}
+
 .logo {
   margin-top: 20px;
 }
@@ -83,7 +80,7 @@
 }
 
 .header1 {
-  font-size: 65px;
+  font-size: 85px;
   color: #054c73;
 }
 
