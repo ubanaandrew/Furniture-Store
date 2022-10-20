@@ -1,5 +1,6 @@
 import React from "react";
 
+// product card component with properties
 function ProductCard (props) {
     return (
         <div>
