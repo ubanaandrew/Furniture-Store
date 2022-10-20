@@ -61,21 +61,20 @@
   margin-top: 20px;
 }
 
-.Value-box {
+.Tab-box {
   display: flex;
   margin: 10px;
   padding: 20px;
   justify-content: space-between;
 }
 
-.Value-banner {
+.Tab-banner {
   background-color: #f2f5ff;
   margin: 0px;
 }
 
 .text {
   font-size: 25px;
-  /* text-indent: 50px; */
   line-height: 2.0;
 }
 
@@ -84,29 +83,12 @@
   color: #054c73;
 }
 
-.header5 {
+.header {
   font-size: 25px;
 }
 
-.button {
-  background-color: #054c73;
-  padding: 30px 80px;
-  font-size: 20px;
-  color: white;
-  border-radius: 50px;
-}
-
-@media screen and (max-width: 750px) {
-  .Product {
-    display: grid;
-    width: 100%;
-    grid-template-columns: auto;
-    gap: 10px;
-    padding: 10px
-  }
-
-  .Value-box {
-    display: block;
+  .Tab-box {
+    display: flex;
     text-align: center;
     padding: 20px;
     justify-content: space-between;
@@ -119,11 +101,6 @@
     text-align: justify;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  .header1 {
-    font-size: 35px;
-    color: #054c73;
   }
 
   .App-background-card {
@@ -150,7 +127,97 @@
     color: white;
     border-radius: 50px;
   }
-}
+
+  @media only screen and (max-width: 1000px) {
+    .Product {
+      display: grid;
+      width: 100%;
+      grid-template-columns: auto;
+      gap: 10px;
+      padding: 10px
+    }
+
+    .Header {
+      margin: 50px 100px;
+    }
+    
+    .App-header {
+      background-color: #282c34;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: calc(10px + 2vmin);
+      color: white;
+    }
+    
+    .App-background {
+      background-image: url('../public/assets/hero-image.png');
+      width: auto;
+      height: 1100px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .App-background-card {
+      width: 40%;
+      border-radius: 20px;
+      background-color: #dfe9f4;
+      position: relative;
+      display: block;
+      float: right;
+      padding: 50px;
+      margin-right: 50px;
+      margin-top: 150px;
+      height: auto;
+    }
+    
+    .margin {
+      margin: 20px;
+    }
+    
+    .margin2 {
+      margin: 30px;
+    }
+    
+    .logo {
+      margin-top: 20px;
+    }
+    
+    .Tab-banner {
+      background-color: #f2f5ff;
+      margin: 0px;
+    }
+    
+    .header1 {
+      font-size: 40px;
+      color: #054c73;
+    }
+    
+    .header {
+      font-size: 25px;
+    }
+    
+      .Tab-box {
+        display: block;
+        text-align: center;
+        padding: 20px;
+        justify-content: space-between;
+      }
+    
+      .text {
+        font-size: 20px;
+        line-height: 1.8;
+      }
+    
+      .button {
+        background-color: #054c73;
+        padding: 10px 50px;
+        font-size: 20px;
+        color: white;
+        border-radius: 50px;
+      }
 
 @keyframes App-logo-spin {
   from {
@@ -160,3 +227,97 @@
     transform: rotate(360deg);
   }
 }
+}
+@media only screen and (max-width: 320px) {
+  .Product {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto;
+    gap: 10px;
+    padding: 10px
+  }
+
+  .Header {
+    margin: 50px 100px;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-background {
+    background-image: url('../public/assets/hero-image.png');
+    width: 400px;
+    height: 1100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+  }
+  
+  .App-background-card {
+    width: 40%;
+    border-radius: 20px;
+    background-color: #dfe9f4;
+    position: relative;
+    display: block;
+    float: right;
+    padding: 60px;
+    margin-right: 50px;
+    margin-top: 150px;
+    height: auto;
+  }
+  
+  .margin {
+    margin: 20px;
+  }
+  
+  .margin2 {
+    margin: 30px;
+  }
+  
+  .logo {
+    margin-top: 20px;
+  }
+  
+  .Tab-banner {
+    background-color: #f2f5ff;
+    margin: 0px;
+    width: 360px;
+  }
+  
+  .header1 {
+    font-size: 30px;
+    color: #054c73;
+  }
+  
+  .header {
+    font-size: 25px;
+  }
+  
+  .button {
+    background-color: #054c73;
+    padding: 10px 40px;
+    font-size: 20px;
+    color: white;
+    border-radius: 50px;
+  }
+  
+    .Tab-box {
+      display: block;
+      text-align: center;
+      padding: 20px;
+      justify-content: space-between;
+    }
+  
+    .text {
+      font-size: 20px;
+      line-height: 1.8;
+    }
+  }

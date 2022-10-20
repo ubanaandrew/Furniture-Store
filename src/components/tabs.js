@@ -1,11 +1,14 @@
 import React from "react";
 
-function Values(props) {
+function Tabs(props) {
     return (
-        <div className="Value">
-            <div className="Value-box">
+        <div className="Tab">
+            <div className="Tab-box">
                 <div className="margin logo">
-                    <img src={props.svg} alt="furniture" />
+                    <img 
+                    src={props.svg} 
+                    alt="logo" 
+                    />
                 </div>
                 <div>
                     <h3>{props.name}</h3>
@@ -16,4 +19,4 @@ function Values(props) {
     )
 }
 
-export default Values;
+export default Tabs;

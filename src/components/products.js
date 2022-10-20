@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-// import { productAPI } from '../api/productAPI';
-import ProductCard from "./product-card";
+import ProductLayout from "./product-layout";
 
 const client = axios.create({ 
     baseURL: 'https://fh-api-dev.herokuapp.com/api/products-service/products/website/CAD?page=0&limit=8'
@@ -21,10 +20,10 @@ function Products () {
         }, [])
 
     return (
-        <div className="margin2 Value-box">
+        <div className="margin2 Tab-box">
             <div className="Product">
                 {products?.map((product) => (
-                    <ProductCard key={product._id} name={product?.fulhausProductName} img={product?.imageURLs[0]} price={product?.retailPrice} currency={product.orderCurrency} />
+                    <ProductLayout key={product._id} name={product?.fulhausProductName} img={product?.imageURLs[0]} price={product?.retailPrice} currency={product.orderCurrency} />
                 ))}
             </div>
         </div>
